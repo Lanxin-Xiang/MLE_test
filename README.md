@@ -16,7 +16,7 @@ Fetch Rewards Coding Assessment - Machine Learning Engineer
 import requests, json
 
 url="http://localhost:9000/api"
-{data = json.dumps({"dimension":(3, 3), "corner points":  [(1, 1), (3, 1), (1, 3), (3, 3)]})}
+data = json.dumps({"dimension":(3, 3), "corner points":  [(1, 1), (3, 1), (1, 3), (3, 3)]})
 r = requests.post(url, data)
 print(r.json())
 ```
